@@ -1,0 +1,23 @@
+name: Label Pull Requests
+
+on: 
+  schedule:
+    - cron: '0 */1 * * *'
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+
+jobs:
+    label_pr:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            pull-requests: write
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+
+        - name: Label Pull Requests
+          uses: actions/labeler@v4
+          with:
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
