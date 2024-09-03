@@ -43,8 +43,9 @@ jobs:
             ## Updated all Dependencies to Latest Versions.
 
             > [!IMPORTANT]
-            > Details of Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            > This PR Upgrades the Dependencies to the Latest Their Versions.
+            >
+            > Commit: ${{ github.sha }}
+            > Workflow Path: ${{ github.workflow_ref }}
 
-            - Branch: ${{ github.base_ref }} (base) / ${{ github.head_ref }} (head)
-            - Commit: ${{ github.sha }}
-            - Workflow Path: ${{ github.workflow_ref }}
+            **Please Review the Changes and Merge the PR if everything is fine.**

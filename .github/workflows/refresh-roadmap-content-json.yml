@@ -38,19 +38,16 @@ jobs:
           labels: |
             dependencies
             automated pr
-          reviewers: kamranahmedse,arikchakma
+          reviewers: offensive-vk
           commit-message: "chore: update roadmap content json"
           title: "Updated Roadmap Content JSON - Automated"
           body: |
             ## Updated Roadmap Content JSON
             
-            Updates the roadmap content JSON files in the `public` folder.
+            > [!IMPORTANT]
+            > This PR Updates the Roadmap Content JSON files stored in the `public` directory.
+            >
+            > Commit: ${{ github.sha }}
+            > Workflow Path: ${{ github.workflow_ref }}
 
             **Please Review the Changes and Merge the PR if everything is fine.**
-
-            > [!IMPORTANT]
-            > Details of Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-
-            - Branch: ${{ github.base_ref }} (base) / ${{ github.head_ref }} (head)
-            - Commit: ${{ github.sha }}
-            - Workflow Path: ${{ github.workflow_ref }}
