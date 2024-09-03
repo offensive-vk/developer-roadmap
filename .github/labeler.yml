@@ -1,0 +1,199 @@
+# ** DO NOT MODIFY **
+ci/cd:
+  - '*.yml'
+  - '.github/workflows/*.yml'
+  - 'Dockerfile'
+  - 'compose.yaml'
+
+documentation:
+  - '/*.md'
+  - '.github/*'
+
+css:
+  - '**/*.css'
+  - 'CSS/**/*'
+
+bootstrap:
+  - 'Bootstrap/**/*'
+
+expressjs:
+  - 'Express/**/*'
+
+html:
+  - '**/*.html'
+  - 'HTML/**/*'
+
+javascript:
+  - '**/*.js'
+  - 'JavaScript/**/*'
+
+jsx:
+  - '**/*.jsx'
+
+md:
+  - '**/*.md'
+  - 'Markdown/**/*'
+
+mongodb:
+  - 'MongoDB/**/*'
+
+node:
+  - 'Node/**/*'
+  - '**/*.js'
+
+php:
+  - '**/*.php'
+  - 'PHP'
+
+python:
+  - '**/*.py'
+  - 'Python'
+  - '**/*.pyc'
+
+react:
+  - 'React/**/*'
+  - '**/*.jsx'
+  - '**/*.tsx'
+
+sass:
+  - '**/*.scss'
+  - '**/*.sass'
+  - 'Sass/**/*'
+
+typescript:
+  - '**/*.d.ts'
+  - '**/*.ts'
+  - '**/*.mts'
+  - '**/*.cts'
+  - 'TypeScript/**/*'
+
+tsx:
+  - '**/*.tsx'
+
+yml:
+  - 'YAML/**/*'
+  - '**/*.yml'
+  - '**/*.yaml'
+  - '.github/*.yml'
+  - '.github/workflows/*.yml'
+
+agreed:
+  - 'agreed'
+
+ai-data-scientist:
+  - 'ai-data-scientist'
+  - 'machine learning'
+
+android:
+  - 'android'
+  - 'mobile'
+
+angular:
+  - 'angular'
+  - 'front-end framework'
+
+api-design:
+  - 'api-design'
+  - 'backend'
+
+aspnet-core:
+  - 'aspnet-core'
+  - 'backend'
+
+automated pr:
+  - 'automated pr'
+  - 'github actions'
+
+aws:
+  - 'aws'
+  - 'cloud'
+
+backend:
+  - 'backend'
+  - 'server-side'
+
+best-practices/aws:
+  - 'best-practices/aws'
+  - 'cloud'
+
+best-practices/frontend-performance:
+  - 'best-practices/frontend-performance'
+  - 'front-end'
+
+blockchain:
+  - 'blockchain'
+  - 'cryptocurrency'
+
+bug:
+  - 'bug'
+  - 'issue'
+
+code-review:
+  - 'code-review'
+  - 'pull request'
+
+computer-science:
+  - 'computer-science'
+  - 'theory'
+
+cpp:
+  - 'cpp'
+  - 'c++'
+
+cyber-security:
+  - 'cyber-security'
+  - 'security'
+
+data-analyst:
+  - 'data-analyst'
+  - 'data science'
+
+datastructures-and-algorithms:
+  - 'datastructures-and-algorithms'
+  - 'computer science'
+
+dependencies:
+  - 'dependencies'
+  - 'libraries'
+
+design-system:
+  - 'design-system'
+  - 'front-end'
+
+devops:
+  - 'devops'
+  - 'deployment'
+
+docker:
+  - 'docker'
+  - 'containerization'
+
+draft:
+  - 'draft'
+  - 'work in progress'
+
+duplicate:
+  - 'duplicate'
+  - 'identical'
+
+enhancement:
+  - 'enhancement'
+  - 'feature request'
+
+feature request:
+  - 'feature request'
+  - 'new feature'
+
+feedback left:
+  - 'feedback left'
+  - 'comments'
+
+flutter:
+  - 'flutter'
+  - 'mobile'
+
+frontend:
+  - 'frontend'
+  - 'client-side'
+
+# ** DO NOT MODIFY **

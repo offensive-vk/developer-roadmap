@@ -1,40 +1,57 @@
-name: Generate Labeler Config
+name: Automated Label
 
-on:
-  workflow_dispatch:
+on: 
   schedule:
-    - cron: 0 0 * * *
+    - cron: '0 */1 * * *'
+  issues:
+    types: [opened, edited]
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
 
 jobs:
-  generate-labeler-config:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    generate-config:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v2
 
-      - name: Fetch labels from remote repository
-        run: |
-          curl -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/${REMOTE_OWNER}/${REMOTE_REPO}/labels?state=active \
-            > labels.json
+          - name: Fetch labels from remote repository
+            run: |
+                curl -H "Accept: application/vnd.github.v3+json" \
+                https://api.github.com/repos/${REMOTE_OWNER}/${REMOTE_REPO}/labels?state=active \
+                > labels.json
 
-      - name: Generate labeler.yml file
-        run: |
-          echo "labels:" > labeler.yml
-          jq -r '.[] | .name' labels.json | while read label; do
-            echo "  - name: $label" >> labeler.yml
-            echo "    patterns:" >> labeler.yml
-            echo "      - $label" >> labeler.yml
-          done
+          - name: Generate labeler.yml file
+            run: |
+                echo "" > labeler.yml
+                jq -r '.[] | .name' labels.json | while read label; do
+                echo " $label" >> labeler.yml
+                done
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions[bot]@norepy.users.github.com"
-          git add labeler.yml
-          git commit -m "Generated labeler.yml file"
-          git push origin master
+          - name: Commit and push changes
+            run: |
+                git config --global user.name "github-actions"
+                git config --global user.email "github-actions[bot]@norepy.users.github.com"
+                git add labeler.yml
+                git commit -m "Label Config"
+                git push origin master
+        env:
+            REMOTE_OWNER: kamranahmedse
+            REMOTE_REPO: developer-roadmap
 
-env:
-  REMOTE_OWNER: kamranahmedse
-  REMOTE_REPO: developer-roadmap
+    label_pull_requests:
+        needs: generate-config
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            pull-requests: write
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+
+        - name: Label Pull Requests
+          if: github.event_name == 'pull_request'
+          uses: actions/labeler@v4
+          with:
+             repo-token: ${{ secrets.GITHUB_TOKEN }}
