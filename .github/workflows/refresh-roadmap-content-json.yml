@@ -18,10 +18,10 @@ jobs:
           version: 9
           run_install: false
 
-      - name: Setup Node.js Version 18
+      - name: Setup Node.js Version 20 (LTS)
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'pnpm'
 
       - name: Install Dependencies and Generate Content JSON
@@ -30,7 +30,7 @@ jobs:
           npm run generate:roadmap-content-json
       
       - name: Create PR
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v7
         with:
           delete-branch: false
           branch: "chore/update-content-json"
@@ -43,12 +43,14 @@ jobs:
           title: "Updated Roadmap Content JSON - Automated"
           body: |
             ## Updated Roadmap Content JSON
+            
+            Updates the roadmap content JSON files in the `public` folder.
+
+            **Please Review the Changes and Merge the PR if everything is fine.**
 
             > [!IMPORTANT]
             > Details of Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-            - Author: github-actions[bot]
             - Branch: ${{ github.base_ref }} (base) / ${{ github.head_ref }} (head)
             - Commit: ${{ github.sha }}
             - Workflow Path: ${{ github.workflow_ref }}
-            - Pull Request Number: #${{ github.event.number }}

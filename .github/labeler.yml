@@ -19,225 +19,173 @@ android:
 angular:
   - 'Roadmap angular'
   - 'angular'
-  - 'javascript'
-  - 'framework'
 
 api-design:
   - 'api design roadmap'
-  - 'api'
-  - 'design'
-  - 'architecture'
-  - 'interface'
 
 aspnet-core:
   - 'Roadmap aspnet-core'
   - 'aspnet'
   - 'core'
-  - 'framework'
 
 automated pr:
-  - 'automated pr roadmap'
   - 'automated'
-  - 'pr'
-  - 'pull'
-  - 'request'
+  - 'github-actions'
 
 aws:
   - 'Roadmap aws'
   - 'aws'
-  - 'cloud'
-  - 'computing'
 
 backend:
   - 'Roadmap backend'
   - 'backend'
-  - 'server'
-  - 'side'
+  - 'server side'
 
 best-practices/aws:
-  - 'best practices aws roadmap'
-  - 'best'
-  - 'practices'
+  - 'aws roadmap'
   - 'aws'
-  - 'cloud'
 
 best-practices/frontend-performance:
   - 'best practices frontend performance roadmap'
-  - 'best'
-  - 'practices'
-  - 'frontend'
-  - 'performance'
+  - 'best practices'
+  - 'frontend performance'
 
 blockchain:
   - 'Roadmap blockchain'
-  - 'blockchain'
-  - 'technology'
+  - 'blockchain technology'
   - 'cryptocurrency'
 
 bug:
-  - 'Roadmap bug'
+  - 'mistake'
   - 'bug'
   - 'error'
   - 'fix'
 
 code-review:
-  - 'Roadmap code-review'
-  - 'code'
-  - 'review'
-  - 'feedback'
+  - 'code review'
+  - 'feedback '
 
 computer-science:
   - 'Roadmap computer-science'
-  - 'computer'
-  - 'science'
-  - 'theory'
+  - 'computer science'
 
 cpp:
   - 'Roadmap cpp'
   - 'cpp'
   - 'c++'
-  - 'programming'
-
+  
 cyber-security:
   - 'Roadmap cyber-security'
-  - 'cyber'
-  - 'security'
-  - 'protection'
+  - 'cyber security'
 
 data-analyst:
   - 'Roadmap data-analyst'
   - 'data'
   - 'analyst'
-  - 'insights'
 
 datastructures-and-algorithms:
   - 'Roadmap datastructures-and-algorithms'
-  - 'data'
-  - 'structures'
-  - 'algorithms'
+  - 'dsa'
+  - 'data structures algorithms'
 
 dependencies:
-  - 'dependencies roadmap'
   - 'dependencies'
-  - 'management'
-  - 'packages'
+  - 'dev dependencies'
 
 design-system:
   - 'Roadmap design-system'
   - 'design'
   - 'system'
-  - 'ui'
 
 devops:
   - 'Roadmap devops'
   - 'devops'
   - 'development'
-  - 'operations'
 
 docker:
   - 'Roadmap docker'
   - 'docker'
   - 'container'
-  - 'virtualization'
+  - 'containerization'
 
 draft:
-  - 'draft roadmap'
   - 'draft'
   - 'proposal'
   - 'idea'
+  - 'progress'
 
 duplicate:
-  - 'duplicate roadmap'
   - 'duplicate'
   - 'copy'
   - 'redundant'
 
 enhancement:
-  - 'enhancement roadmap'
   - 'enhancement'
   - 'improvement'
   - 'feature'
 
 feature-request:
-  - 'feature request in roadmap'
   - 'feature'
   - 'request'
   - 'enhancement'
 
 feedback-left:
-  - 'feedback left roadmap'
-  - 'feedback'
-  - 'left'
-  - 'comment'
+  - 'feedback left'
 
 flutter:
   - 'Roadmap flutter'
   - 'flutter'
-  - 'mobile'
-  - 'app'
 
 frontend:
   - 'frontend roadmap'
   - 'frontend'
-  - 'client'
-  - 'side'
+  - 'client side'
 
 full-stack:
   - 'full stack roadmap'
-  - 'full'
-  - 'stack'
-  - 'development'
+  - 'full stack dev'
+  - 'full stack development'
 
 game-developer:
   - 'game developer roadmap'
   - 'game'
   - 'developer'
-  - 'gaming'
 
 git-github:
   - 'git github roadmap'
   - 'git'
   - 'github'
-  - 'version'
 
 golang:
   - 'Roadmap golang'
   - 'golang'
   - 'go'
-  - 'programming'
 
 good-first-issue:
-  - 'good first issue roadmap'
-  - 'good'
-  - 'first'
-  - 'issue'
+  - 'good first issue'
+  - 'basic'
+  - 'beginner'
 
 graphql:
   - 'Roadmap graphql'
   - 'graphql'
-  - 'query'
-  - 'language'
-
+  
 hacktoberfest:
-  - 'hacktoberfest roadmap'
   - 'hacktoberfest'
   - 'hack'
   - 'october'
 
 hacktoberfest-accepted:
-  - 'hacktoberfest accepted roadmap'
   - 'hacktoberfest'
   - 'accepted'
-  - 'pr'
 
 help-wanted:
-  - 'help wanted roadmap'
   - 'help'
   - 'wanted'
   - 'assistance'
+  - 'required'
 
 investigating:
-  - 'investigating roadmap'
   - 'investigating'
   - 'research'
   - 'analysis'
@@ -246,52 +194,40 @@ ios:
   - 'ios roadmap'
   - 'ios'
   - 'apple'
-  - 'mobile'
 
 java:
   - 'Roadmap java'
   - 'java'
-  - 'programming'
-  - 'language'
-
+  
 javascript:
   - 'Roadmap javascript'
   - 'javascript'
-  - 'programming'
-  - 'language'
-
+  - '**/*.js'
+  
 kubernetes:
   - 'Roadmap kubernetes'
   - 'kubernetes'
-  - 'container'
   - 'orchestration'
 
 linux:
   - 'Roadmap linux'
   - 'linux'
-  - 'operating'
-  - 'system'
 
 mlops:
   - 'mlops roadmap'
   - 'mlops'
-  - 'machine'
-  - 'learning'
+  - 'machine learning'
 
 mongodb:
   - 'Roadmap mongodb'
   - 'mongodb'
-  - 'database'
-  - 'nosql'
 
 nodejs:
   - 'Roadmap nodejs'
   - 'nodejs'
-  - 'javascript'
-  - 'runtime'
+  - 'javascript runtime'
 
 planned:
-  - 'planned roadmap'
   - 'planned'
   - 'scheduled'
   - 'task'
@@ -305,23 +241,20 @@ postgresql-dba:
 python:
   - 'Roadmap python'
   - 'python'
-  - 'programming'
-  - 'language'
+  - '**/*.py'
 
 react:
   - 'Roadmap react'
   - 'react'
-  - 'javascript'
-  - 'library'
+  - '**/*.jsx'
+  - '**/*.tsx'
 
 redis:
   - 'Roadmap redis'
   - 'redis'
-  - 'database'
-  - 'nosql'
+  - 'nosql database'
 
 rejected:
-  - 'rejected roadmap'
   - 'rejected'
   - 'denied'
   - 'dismissed'
@@ -329,97 +262,75 @@ rejected:
 ruby:
   - 'Roadmap ruby'
   - 'ruby'
-  - 'programming'
-  - 'language'
 
 rust:
   - 'Roadmap rust'
   - 'rust'
-  - 'programming'
-  - 'language'
 
 scala:
   - 'Roadmap scala'
   - 'scala'
-  - 'programming'
-  - 'language'
-
+  
 security:
   - 'security roadmap'
   - 'security'
-  - 'protection'
   - 'safety'
 
 spring:
   - 'Roadmap spring'
   - 'spring'
   - 'java'
-  - 'framework'
 
 swift:
   - 'Roadmap swift'
   - 'swift'
-  - 'programming'
-  - 'language'
+  - 'swift lang'
 
 typescript:
   - 'Roadmap typescript'
   - 'typescript'
-  - 'javascript'
-  - 'superset'
+  - 'ts lang'
 
 ui-ux:
   - 'ui ux roadmap'
-  - 'ui'
-  - 'ux'
+  - 'ui ux'
+  - 'ux ui'
   - 'design'
 
 unit-test:
   - 'unit test roadmap'
-  - 'unit'
-  - 'test'
+  - 'unit test'
   - 'testing'
 
 vba:
   - 'vba roadmap'
   - 'vba'
-  - 'visual'
-  - 'basic'
+  - 'visual basic'
 
 vue:
   - 'Roadmap vue'
   - 'vue'
-  - 'javascript'
-  - 'framework'
-
+  
 web-development:
   - 'web development roadmap'
-  - 'web'
-  - 'development'
-  - 'internet'
+  - 'web dev'
+  - 'web development'
 
 windows:
   - 'windows roadmap'
-  - 'windows'
-  - 'operating'
-  - 'system'
+  - 'microsoft windows'
 
 windows-forms:
   - 'windows forms roadmap'
-  - 'windows'
   - 'forms'
   - 'application'
 
 wontfix:
   - 'wont fix roadmap'
   - 'wont'
-  - 'fix'
-  - 'issue'
 
 writing:
   - 'writing roadmap'
   - 'writing'
-  - 'content'
-  - 'documentation'
 
 # *** by @offensive-vk ***
