@@ -1,0 +1,40 @@
+name: Generate Labeler Config
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  generate-labeler-config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fetch labels from remote repository
+        run: |
+          curl -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${REMOTE_OWNER}/${REMOTE_REPO}/labels?state=active \
+            > labels.json
+
+      - name: Generate labeler.yml file
+        run: |
+          echo "labels:" > labeler.yml
+          jq -r '.[] | .name' labels.json | while read label; do
+            echo "  - name: $label" >> labeler.yml
+            echo "    patterns:" >> labeler.yml
+            echo "      - $label" >> labeler.yml
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions[bot]@norepy.users.github.com"
+          git add labeler.yml
+          git commit -m "Generated labeler.yml file"
+          git push origin main
+
+env:
+  REMOTE_OWNER: kamranahmedse
+  REMOTE_REPO: developer-roadmap
