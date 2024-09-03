@@ -33,7 +33,7 @@ jobs:
           git config --global user.email "github-actions[bot]@norepy.users.github.com"
           git add labeler.yml
           git commit -m "Generated labeler.yml file"
-          git push origin main
+          git push origin master
 
 env:
   REMOTE_OWNER: kamranahmedse
