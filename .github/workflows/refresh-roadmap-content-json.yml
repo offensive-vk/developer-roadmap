@@ -1,9 +1,9 @@
-name: Refreshes roadmap content JSON
+name: Refresh Roadmap Content JSON
 
 on:
-  workflow_dispatch: # allow manual run
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # every day at midnight
+    - cron: '0 0 * * *'
 
 jobs:
   upgrade-deps:
@@ -12,22 +12,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
+      - name: Setup pnpm@v9
         uses: pnpm/action-setup@v4
         with:
           version: 9
           run_install: false
 
-      - name: Setup Node.js
+      - name: Setup Node.js Version 18
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'pnpm'
 
-      - name: Install dependencies and generate content JSON
+      - name: Install Dependencies and Generate Content JSON
         run: |
           pnpm install
           npm run generate:roadmap-content-json
+      
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:
@@ -39,7 +40,15 @@ jobs:
             automated pr
           reviewers: kamranahmedse,arikchakma
           commit-message: "chore: update roadmap content json"
-          title: "Update roadmap content json"
+          title: "Updated Roadmap Content JSON - Automated"
           body: |
-            Updates the roadmap content JSON files in the `public` folder.
-            Please review the changes and merge if everything looks good.
+            ## Updated Roadmap Content JSON
+
+            > [!IMPORTANT]
+            > Details of Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            - Author: github-actions[bot]
+            - Branch: ${{ github.base_ref }} (base) / ${{ github.head_ref }} (head)
+            - Commit: ${{ github.sha }}
+            - Workflow Path: ${{ github.workflow_ref }}
+            - Pull Request Number: #${{ github.event.number }}

@@ -1,0 +1,425 @@
+agreed:
+  - 'agreed'
+  - 'concept'
+  - 'issue'
+  - 'implementation'
+
+ai-data-scientist:
+  - 'ai data scientist roadmap'
+  - 'ai'
+  - 'data'
+  - 'scientist'
+
+android:
+  - 'Roadmap android'
+  - 'android'
+  - 'mobile'
+  - 'android developer'
+
+angular:
+  - 'Roadmap angular'
+  - 'angular'
+  - 'javascript'
+  - 'framework'
+
+api-design:
+  - 'api design roadmap'
+  - 'api'
+  - 'design'
+  - 'architecture'
+  - 'interface'
+
+aspnet-core:
+  - 'Roadmap aspnet-core'
+  - 'aspnet'
+  - 'core'
+  - 'framework'
+
+automated pr:
+  - 'automated pr roadmap'
+  - 'automated'
+  - 'pr'
+  - 'pull'
+  - 'request'
+
+aws:
+  - 'Roadmap aws'
+  - 'aws'
+  - 'cloud'
+  - 'computing'
+
+backend:
+  - 'Roadmap backend'
+  - 'backend'
+  - 'server'
+  - 'side'
+
+best-practices/aws:
+  - 'best practices aws roadmap'
+  - 'best'
+  - 'practices'
+  - 'aws'
+  - 'cloud'
+
+best-practices/frontend-performance:
+  - 'best practices frontend performance roadmap'
+  - 'best'
+  - 'practices'
+  - 'frontend'
+  - 'performance'
+
+blockchain:
+  - 'Roadmap blockchain'
+  - 'blockchain'
+  - 'technology'
+  - 'cryptocurrency'
+
+bug:
+  - 'Roadmap bug'
+  - 'bug'
+  - 'error'
+  - 'fix'
+
+code-review:
+  - 'Roadmap code-review'
+  - 'code'
+  - 'review'
+  - 'feedback'
+
+computer-science:
+  - 'Roadmap computer-science'
+  - 'computer'
+  - 'science'
+  - 'theory'
+
+cpp:
+  - 'Roadmap cpp'
+  - 'cpp'
+  - 'c++'
+  - 'programming'
+
+cyber-security:
+  - 'Roadmap cyber-security'
+  - 'cyber'
+  - 'security'
+  - 'protection'
+
+data-analyst:
+  - 'Roadmap data-analyst'
+  - 'data'
+  - 'analyst'
+  - 'insights'
+
+datastructures-and-algorithms:
+  - 'Roadmap datastructures-and-algorithms'
+  - 'data'
+  - 'structures'
+  - 'algorithms'
+
+dependencies:
+  - 'dependencies roadmap'
+  - 'dependencies'
+  - 'management'
+  - 'packages'
+
+design-system:
+  - 'Roadmap design-system'
+  - 'design'
+  - 'system'
+  - 'ui'
+
+devops:
+  - 'Roadmap devops'
+  - 'devops'
+  - 'development'
+  - 'operations'
+
+docker:
+  - 'Roadmap docker'
+  - 'docker'
+  - 'container'
+  - 'virtualization'
+
+draft:
+  - 'draft roadmap'
+  - 'draft'
+  - 'proposal'
+  - 'idea'
+
+duplicate:
+  - 'duplicate roadmap'
+  - 'duplicate'
+  - 'copy'
+  - 'redundant'
+
+enhancement:
+  - 'enhancement roadmap'
+  - 'enhancement'
+  - 'improvement'
+  - 'feature'
+
+feature-request:
+  - 'feature request in roadmap'
+  - 'feature'
+  - 'request'
+  - 'enhancement'
+
+feedback-left:
+  - 'feedback left roadmap'
+  - 'feedback'
+  - 'left'
+  - 'comment'
+
+flutter:
+  - 'Roadmap flutter'
+  - 'flutter'
+  - 'mobile'
+  - 'app'
+
+frontend:
+  - 'frontend roadmap'
+  - 'frontend'
+  - 'client'
+  - 'side'
+
+full-stack:
+  - 'full stack roadmap'
+  - 'full'
+  - 'stack'
+  - 'development'
+
+game-developer:
+  - 'game developer roadmap'
+  - 'game'
+  - 'developer'
+  - 'gaming'
+
+git-github:
+  - 'git github roadmap'
+  - 'git'
+  - 'github'
+  - 'version'
+
+golang:
+  - 'Roadmap golang'
+  - 'golang'
+  - 'go'
+  - 'programming'
+
+good-first-issue:
+  - 'good first issue roadmap'
+  - 'good'
+  - 'first'
+  - 'issue'
+
+graphql:
+  - 'Roadmap graphql'
+  - 'graphql'
+  - 'query'
+  - 'language'
+
+hacktoberfest:
+  - 'hacktoberfest roadmap'
+  - 'hacktoberfest'
+  - 'hack'
+  - 'october'
+
+hacktoberfest-accepted:
+  - 'hacktoberfest accepted roadmap'
+  - 'hacktoberfest'
+  - 'accepted'
+  - 'pr'
+
+help-wanted:
+  - 'help wanted roadmap'
+  - 'help'
+  - 'wanted'
+  - 'assistance'
+
+investigating:
+  - 'investigating roadmap'
+  - 'investigating'
+  - 'research'
+  - 'analysis'
+
+ios:
+  - 'ios roadmap'
+  - 'ios'
+  - 'apple'
+  - 'mobile'
+
+java:
+  - 'Roadmap java'
+  - 'java'
+  - 'programming'
+  - 'language'
+
+javascript:
+  - 'Roadmap javascript'
+  - 'javascript'
+  - 'programming'
+  - 'language'
+
+kubernetes:
+  - 'Roadmap kubernetes'
+  - 'kubernetes'
+  - 'container'
+  - 'orchestration'
+
+linux:
+  - 'Roadmap linux'
+  - 'linux'
+  - 'operating'
+  - 'system'
+
+mlops:
+  - 'mlops roadmap'
+  - 'mlops'
+  - 'machine'
+  - 'learning'
+
+mongodb:
+  - 'Roadmap mongodb'
+  - 'mongodb'
+  - 'database'
+  - 'nosql'
+
+nodejs:
+  - 'Roadmap nodejs'
+  - 'nodejs'
+  - 'javascript'
+  - 'runtime'
+
+planned:
+  - 'planned roadmap'
+  - 'planned'
+  - 'scheduled'
+  - 'task'
+
+postgresql-dba:
+  - 'postgresql dba roadmap'
+  - 'postgresql'
+  - 'dba'
+  - 'database'
+
+python:
+  - 'Roadmap python'
+  - 'python'
+  - 'programming'
+  - 'language'
+
+react:
+  - 'Roadmap react'
+  - 'react'
+  - 'javascript'
+  - 'library'
+
+redis:
+  - 'Roadmap redis'
+  - 'redis'
+  - 'database'
+  - 'nosql'
+
+rejected:
+  - 'rejected roadmap'
+  - 'rejected'
+  - 'denied'
+  - 'dismissed'
+
+ruby:
+  - 'Roadmap ruby'
+  - 'ruby'
+  - 'programming'
+  - 'language'
+
+rust:
+  - 'Roadmap rust'
+  - 'rust'
+  - 'programming'
+  - 'language'
+
+scala:
+  - 'Roadmap scala'
+  - 'scala'
+  - 'programming'
+  - 'language'
+
+security:
+  - 'security roadmap'
+  - 'security'
+  - 'protection'
+  - 'safety'
+
+spring:
+  - 'Roadmap spring'
+  - 'spring'
+  - 'java'
+  - 'framework'
+
+swift:
+  - 'Roadmap swift'
+  - 'swift'
+  - 'programming'
+  - 'language'
+
+typescript:
+  - 'Roadmap typescript'
+  - 'typescript'
+  - 'javascript'
+  - 'superset'
+
+ui-ux:
+  - 'ui ux roadmap'
+  - 'ui'
+  - 'ux'
+  - 'design'
+
+unit-test:
+  - 'unit test roadmap'
+  - 'unit'
+  - 'test'
+  - 'testing'
+
+vba:
+  - 'vba roadmap'
+  - 'vba'
+  - 'visual'
+  - 'basic'
+
+vue:
+  - 'Roadmap vue'
+  - 'vue'
+  - 'javascript'
+  - 'framework'
+
+web-development:
+  - 'web development roadmap'
+  - 'web'
+  - 'development'
+  - 'internet'
+
+windows:
+  - 'windows roadmap'
+  - 'windows'
+  - 'operating'
+  - 'system'
+
+windows-forms:
+  - 'windows forms roadmap'
+  - 'windows'
+  - 'forms'
+  - 'application'
+
+wontfix:
+  - 'wont fix roadmap'
+  - 'wont'
+  - 'fix'
+  - 'issue'
+
+writing:
+  - 'writing roadmap'
+  - 'writing'
+  - 'content'
+  - 'documentation'
+
+# *** by @offensive-vk ***

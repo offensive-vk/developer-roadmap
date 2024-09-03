@@ -29,10 +29,11 @@ jobs:
       # --------------------
       # Prepare the build
       # --------------------
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           pnpm install
-      - name: Generate build
+
+      - name: Generate Production Build
         run: |
           git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
           npm run generate-renderer
@@ -45,7 +46,7 @@ jobs:
       - uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
-      - name: Deploy app to EC2
+      - name: Deploy Application to EC2
         run: |
           rsync -apvz --delete --no-times --exclude "configuration" -e "ssh -o StrictHostKeyChecking=no" -p ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:/var/www/roadmap.sh/
       - name: Restart PM2
