@@ -1,91 +1,31 @@
-labels:
-  - name: agreed
-    patterns:
-      - agreed
-  - name: ai-data-scientist
-    patterns:
-      - ai-data-scientist
-  - name: android
-    patterns:
-      - android
-  - name: angular
-    patterns:
-      - angular
-  - name: api-design
-    patterns:
-      - api-design
-  - name: aspnet-core
-    patterns:
-      - aspnet-core
-  - name: automated pr
-    patterns:
-      - automated pr
-  - name: aws
-    patterns:
-      - aws
-  - name: backend
-    patterns:
-      - backend
-  - name: best-practices/aws
-    patterns:
-      - best-practices/aws
-  - name: best-practices/frontend-performance
-    patterns:
-      - best-practices/frontend-performance
-  - name: blockchain
-    patterns:
-      - blockchain
-  - name: bug
-    patterns:
-      - bug
-  - name: code-review
-    patterns:
-      - code-review
-  - name: computer-science
-    patterns:
-      - computer-science
-  - name: cpp
-    patterns:
-      - cpp
-  - name: cyber-security
-    patterns:
-      - cyber-security
-  - name: data-analyst
-    patterns:
-      - data-analyst
-  - name: datastructures-and-algorithms
-    patterns:
-      - datastructures-and-algorithms
-  - name: dependencies
-    patterns:
-      - dependencies
-  - name: design-system
-    patterns:
-      - design-system
-  - name: devops
-    patterns:
-      - devops
-  - name: docker
-    patterns:
-      - docker
-  - name: draft
-    patterns:
-      - draft
-  - name: duplicate
-    patterns:
-      - duplicate
-  - name: enhancement
-    patterns:
-      - enhancement
-  - name: feature request
-    patterns:
-      - feature request
-  - name: feedback left
-    patterns:
-      - feedback left
-  - name: flutter
-    patterns:
-      - flutter
-  - name: frontend
-    patterns:
-      - frontend
+
+ agreed
+ ai-data-scientist
+ android
+ angular
+ api-design
+ aspnet-core
+ automated pr
+ aws
+ backend
+ best-practices/aws
+ best-practices/frontend-performance
+ blockchain
+ bug
+ code-review
+ computer-science
+ cpp
+ cyber-security
+ data-analyst
+ datastructures-and-algorithms
+ dependencies
+ design-system
+ devops
+ docker
+ draft
+ duplicate
+ enhancement
+ feature request
+ feedback left
+ flutter
+ frontend
