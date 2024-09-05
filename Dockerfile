@@ -30,7 +30,7 @@ RUN echo "Dockerfile Passed. "
 # Stage 5: Production stage
 FROM node:20 AS production
 WORKDIR /app
-COPY --from=build /app/dist ./dist
+COPY /app/dist ./dist
 COPY package*.json ./
 RUN pnpm install --lockfile-only
 EXPOSE 8080
