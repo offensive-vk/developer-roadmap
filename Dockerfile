@@ -1,5 +1,5 @@
 # Stage 0: Setup Nodejs and pnpm
-FROM node:20.17.0-bullseye AS setup
+FROM node AS setup
 RUN node -v ; npm -v
 RUN npm i -g pnpm@9.0.0
 RUN pnpm -v
