@@ -5,3 +5,4 @@ test('homepage test', async ({ page }) => {
 
   await expect(page).toHaveScreenshot({ fullPage: true });
 });
+

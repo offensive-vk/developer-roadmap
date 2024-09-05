@@ -1,5 +1,5 @@
 ##################################
-# Basic Configuation Based Labels
+# Basic Configuation Based Labels #
 ##################################
 configuration:
   - '.astro/*'

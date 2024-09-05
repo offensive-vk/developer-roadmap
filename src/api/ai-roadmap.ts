@@ -1,6 +1,7 @@
 import { type APIContext } from 'astro';
 import { api } from './api.ts';
 
+
 export type GetAIRoadmapBySlugResponse = {
   id: string;
   term: string;

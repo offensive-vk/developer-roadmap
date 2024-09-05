@@ -20,6 +20,7 @@ type StreakResponse = {
   lastVisitAt: Date;
 };
 
+
 type AccountStreakProps = {};
 
 export function AccountStreak(props: AccountStreakProps) {

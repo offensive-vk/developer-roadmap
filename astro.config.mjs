@@ -5,7 +5,6 @@ import node from '@astrojs/node';
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
-
 import react from '@astrojs/react';
 
 // https://astro.build/config
