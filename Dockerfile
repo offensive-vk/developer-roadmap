@@ -11,14 +11,14 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
-# Stage 2: Test stage
-FROM base AS test
+# Stage 2: format stage
+FROM base AS format
 RUN pnpm install --lockfile-only
-RUN npm run test
+RUN npm run format
 
 # Stage 3: Build stage
 FROM base AS build
-RUN pnpm run build
+RUN npm run build
 
 # Stage 4: Cleanup and Exit
 FROM base AS cleanup

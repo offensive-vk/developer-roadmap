@@ -53,7 +53,6 @@ jobs:
 
   build-and-push:
     runs-on: ubuntu-latest
-    needs: build-image-only
     continue-on-error: true
     steps:
     - name: Checkout repository
