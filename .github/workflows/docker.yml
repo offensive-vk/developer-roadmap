@@ -37,10 +37,6 @@ jobs:
           # Build Linux Image
           docker build -t roadmap-sh:linux -f Dockerfile .
 
-          # Build macOS Image (using buildkit)
-          docker buildx create --use --name my-builder
-          docker buildx build --platform darwin/amd64 -t roadmap-sh:macos -f Dockerfile .
-
           # Build Windows Image (using buildkit)
           docker buildx create --use --name my-builder
           docker buildx build --platform windows/amd64 -t roadmap-sh:windows -f Dockerfile .
@@ -73,7 +69,7 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKER_USER }}/roadmap-sh:latest
-        platforms: linux/amd64,linux/arm64,windows/amd64,darwin/amd64
+        platforms: linux/amd64,linux/arm64,windows/amd64
 
     - name: Post build cleanup
       run: docker builder prune --force

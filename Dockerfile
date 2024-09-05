@@ -1,5 +1,5 @@
 # Stage 0: Setup Nodejs and pnpm
-FROM node:20 AS setup
+FROM node:20.17.0-bullseye AS setup
 RUN node -v ; npm -v
 RUN npm i -g pnpm@9.0.0
 RUN pnpm -v
@@ -27,11 +27,11 @@ COPY package*.json ./
 RUN pnpm cleanup --force; pnpm update 
 RUN echo "Dockerfile Passed. "
 
-# Stage 5: Production stage
-FROM node:20 AS production
-WORKDIR /app
-COPY /app/dist ./dist
-COPY package*.json ./
-RUN pnpm install --lockfile-only
-EXPOSE 8080
-CMD ["npm", "run", "dev"]
+# # Stage 5: Production stage
+# FROM node:20 AS production
+# WORKDIR /app
+# COPY /app/dist ./dist
+# COPY package*.json ./
+# RUN pnpm install --lockfile-only
+# EXPOSE 8080
+# CMD ["npm", "run", "dev"]
