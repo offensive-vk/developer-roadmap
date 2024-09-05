@@ -44,7 +44,6 @@ jobs:
           # Create Multi-Arch Image
           docker manifest create roadmap-sh:latest \
             --amend roadmap-sh:linux \
-            --amend roadmap-sh:macos \
             --amend roadmap-sh:windows
 
   build-and-push:
