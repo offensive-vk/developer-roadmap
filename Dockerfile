@@ -1,37 +1,34 @@
-# Stage 0: Setup Nodejs and pnpm
-FROM node AS setup
-RUN node -v ; npm -v
-RUN npm i -g pnpm@9.0.0
+# Stage 0: Setup Node.js and pnpm
+FROM node:20 AS setup
+RUN node -v && npm -v
+RUN npm install -g pnpm@9.0.0
 RUN pnpm -v
 
 # Stage 1: Base build stage
 FROM setup AS base
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
+COPY package*.json pnpm-lock.yaml ./
+RUN pnpm install
 
-# # Stage 2: format stage
+# Stage 2: Format stage
 # FROM base AS format
-# RUN pnpm install --lockfile-only
 # RUN npm run format
+# RUN npm run test:e2e
 
-# # Stage 3: Build stage
-# FROM base AS build
-# RUN npm run build
+# Stage 3: Build stage
+FROM base AS build
+COPY . .
+RUN npm run build
 
-# Stage 4: Cleanup and Exit
+# Stage 4: Cleanup stage (optional)
 FROM base AS cleanup
-WORKDIR /app
-COPY package*.json ./
-RUN pnpm cleanup --force; pnpm update 
-RUN echo "Dockerfile Passed. "
+RUN pnpm prune --prod  # Only keep production dependencies
 
-# # Stage 5: Production stage
-# FROM node:20 AS production
-# WORKDIR /app
-# COPY /app/dist ./dist
-# COPY package*.json ./
-# RUN pnpm install --lockfile-only
-# EXPOSE 8080
-# CMD ["npm", "run", "dev"]
+# Stage 5: Production stage
+FROM node:20 AS production
+WORKDIR /app
+COPY --from=build /app/dist ./dist
+COPY package*.json pnpm-lock.yaml ./
+RUN pnpm install --prod --lockfile-only
+EXPOSE 8080
+CMD ["npm","start"]
