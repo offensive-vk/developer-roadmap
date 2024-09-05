@@ -1,0 +1,5 @@
+services:
+  setup-container:
+    build: .
+    container_name: Roadmap-sh
+    tty: true
