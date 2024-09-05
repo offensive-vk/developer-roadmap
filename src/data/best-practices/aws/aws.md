@@ -10,7 +10,7 @@ title: 'AWS Best Practices'
 description: 'Detailed list of best practices for Amazon Web Services (AWS)'
 dimensions:
   width: 968
-  height: 1770.7
+  height: 1770.7fgdfgfd
 schema:
   headline: 'AWS Best Practices'
   description: 'Detailed list of best practices for Amazon Web Services (AWS). Each best practice carries further details and how to implement that best practice.'
